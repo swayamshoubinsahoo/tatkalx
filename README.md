@@ -7,18 +7,20 @@
 ## 📌 Problem Statement
 During peak Tatkal booking windows (10:00 AM AC / 11:00 AM Non-AC), automated tout scripts flood IRCTC servers with high-frequency concurrent requests. This causes database lock contention, crashes payment gateways, and denies genuine passengers ticket availability within 60 seconds.
 
-## 💡 Solution: TatkalX + Adaption AI
+## 💡 Solution: TatkalX + Agent37 + Adaption AI
 TatkalX introduces a distributed virtual waiting room and telemetry screening layer in front of the reservation backend:
-- **Telemetry Ingestion**: Monitors request bursts, device fingerprints, and interaction latency.
-- **Adaption Classifier**: Routes request signals into an Adaption agent to detect automated scripting anomalies in sub-50ms intervals.
-- **Dynamic Disposition**: Genuine passengers receive guaranteed queue slots; detected tout farms are dropped immediately at the edge.
 
+* **Telemetry Ingestion**: Monitors request bursts, device fingerprints, and interaction latency.
+* **Agent37 Sandboxed Node**: Runs autonomous edge screening agents (`tatkalx-agent`) in lightweight cloud containers.
+* **Adaption AI Classifier**: Evaluates behavioral telemetry signals to detect automated scripting anomalies in sub-35ms intervals.
+* **Dynamic Disposition**: Genuine passengers receive guaranteed queue slots; detected tout farms are dropped immediately at the edge.
 ---
 
 ## 🛠️ Tech Stack
 - **Frontend / Dashboard**: React 18, Vite, TypeScript, Tailwind CSS
 - **Icons & Visuals**: Lucide React, Canvas Confetti
 - **Telemetry & Anti-Bot AI**: Adaption Labs AI Platform API
+- **Edge Agent Infrastructure**: Agent37 Cloud Sandboxes
 
 ---
 
