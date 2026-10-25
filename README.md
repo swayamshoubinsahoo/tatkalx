@@ -1,7 +1,6 @@
 # TatkalX ⚡ — High-Velocity Anti-Tout Queue Ingestion Engine
 
 > Built for **Hackyard Build 2026** (IIT Guwahati)  
-> Track Submission: **Best Use of Adaption ($100 Sponsor Track)**
 
 ---
 
