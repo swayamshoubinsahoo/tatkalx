@@ -1,8 +1,6 @@
 # TatkalX ⚡ — High-Velocity Anti-Tout Queue Ingestion Engine
 
-> Built for **Hackyard Build 2026** (IIT Guwahati)  
 
----
 
 ## 📌 Problem Statement
 During peak Tatkal booking windows (10:00 AM AC / 11:00 AM Non-AC), automated tout scripts flood IRCTC servers with high-frequency concurrent requests. This causes database lock contention, crashes payment gateways, and denies genuine passengers ticket availability within 60 seconds.
